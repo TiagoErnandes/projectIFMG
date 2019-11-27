@@ -71,6 +71,15 @@ public class Game
 
         sabara.setExit("SabaraCity",ifmg);
 
+        // initialise room items
+        outside.addItem(new Item("bench","a place to sit",20000));
+
+        pub.addItem(new Item("mug","something that holds beer", 400));
+        lab.addItem(new Item("flask","container for chemicals",150));
+        lab.addItem(new Item("burner","a heater for mixtures",300));
+        office.addItem(new Item("pen","a device to write with",20));
+        office.addItem(new Item("stapler","a tool to join pieces of paper",100));
+
         currentRoom = outside;  // start game outside
     }
 
